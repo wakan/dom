@@ -8,5 +8,5 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-05 07 * * 1-5 pi /home/pi/dom/bash/hue/curl_set.sh 2 255 7000 9000  >/dev/null 2>&1
+05 07 * * 1-5 pi /home/pi/dom/bash/hue/curl_set.sh 2 255 "#00FF00" 9000  >/dev/null 2>&1
 25 07 * * 1-5 pi /home/pi/dom/bash/hue/curl_set.sh 2 0  >/dev/null 2>&1
