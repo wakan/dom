@@ -8,4 +8,4 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-0 1 * * * pi /home/pi/domoticz/scripts/domoticz_backup.sh >/dev/null 2>&1
+0 1 * * * pi /home/pi/dom/bash/domoticz/domoticz_backup.sh >/dev/null 2>&1

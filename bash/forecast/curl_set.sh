@@ -17,7 +17,7 @@ echo $SUM > /tmp/dom.fromscript.forecast.summary
 PRECIP_INTEN=`echo $API_RESPONSE | jq .currently.precipIntensity`
 echo $PRECIP_INTEN > /tmp/dom.fromscript.forecast.precipIntensity
 PRECIP_PROB=`echo $API_RESPONSE | jq .currently.precipProbability`
-echo $PRECIP_PROB * 100 > /tmp/dom.fromscript.forecast.precipProbability
+echo `jq -n $PRECIP_PROB*100` > /tmp/dom.fromscript.forecast.precipProbability
 TMP=`echo $API_RESPONSE | jq .currently.temperature`
 TMPC="$(/home/pi/dom/bash/forecast/f_to_c $TMP)"
 echo $TMPC > /tmp/dom.fromscript.forecast.temperature

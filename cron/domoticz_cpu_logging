@@ -8,4 +8,4 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-*/10 * * * * pi /home/pi/domoticz/scripts/cpu_logging.sh >/dev/null 2>&1
+*/10 * * * * pi /home/pi/dom/bash/domoticz/cpu_logging.sh >/dev/null 2>&1
